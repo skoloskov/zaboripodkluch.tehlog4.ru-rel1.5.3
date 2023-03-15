@@ -79,16 +79,18 @@
             </h2>
             <?
             $arr_domen_name = explode('.', $_SERVER['HTTP_HOST']);
+
             if ($arr_domen_name[0] == 'zaboripodkluch') {
                 $region_xml_id = "moskva";
             }
             else {
                 $region_xml_id = $arr_domen_name[0];
             }
-            $region_value = CIBlockPropertyEnum::GetList(Array(),
-                Array("IBLOCK_ID"=>$arParams["IBLOCK_ID"], "XML_ID"=>"moskva"))->GetNext()["VALUE"];
+
+            $region_value = CIBlockPropertyEnum::GetList(Array(), Array("IBLOCK_ID"=>$arParams["IBLOCK_ID"], "XML_ID"=>$region_xml_id))->GetNext()["VALUE"];
 
             $GLOBALS['arrTenderFilter']  = array("=PROPERTY_REGION_VALUE" => $region_value);
+
             $APPLICATION->IncludeComponent(
                 "seologica:catalog.section",
                 "tenders_list",
