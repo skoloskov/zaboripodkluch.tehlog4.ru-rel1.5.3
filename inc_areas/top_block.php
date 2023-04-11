@@ -5,24 +5,16 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
     <div class="container hero__container">
         <div class="hero__container_block">
             <h1 class="main__title hero__title">
-                <?= city_replace($APPLICATION->GetPageProperty('pageSettings')['UF_H1']) ?><br/>
-                <? /*Найдено <span class="hero__number"><?= ($APPLICATION->GetPageProperty('CompanyList')!== null ? count($APPLICATION->GetPageProperty('CompanyList')) : count($APPLICATION->GetPageProperty('CompanyList'))) ?></span> проверенных подрядчиков!*/ ?>
+                <?php if ($APPLICATION->GetPageProperty('pageSettings')['UF_H1'] != ''): ?>
+                    <?= city_replace($APPLICATION->GetPageProperty('pageSettings')['UF_H1']) ?>
+                <?php else: ?>
+                    <?=$arResult['NAME']?>
+                <?php endif; ?>
             </h1>
             <div class="hero__desc">
                 Вам не придется обзванивать компании в поисках исполнителя. Создайте заказ и опишите требования -
                 свободные бригады сами пришлют свои сметы и предложения.
             </div>
-     <?/*       <div class="hero__indicators">
-                <div class="hero__indicatros_item">
-                    Компаний и бригад: <span>334</span>
-                </div>
-                <div class="hero__indicatros_item">
-                    Заказов в неделю: <span>186</span>
-                </div>
-                <div class="hero__indicatros_item">
-                    Предложений в сутки: <span>12</span>
-                </div>
-            </div> */?>
             <div class="hero__buttons">
                 <div class="hero__button_item">
                     <button class="hero__button_item_button btn modal-order">Добавить заказ</button>

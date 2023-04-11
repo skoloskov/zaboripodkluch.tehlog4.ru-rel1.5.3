@@ -1,5 +1,21 @@
 <?php
 $arUrlRewrite=array (
+  10 => 
+  array (
+    'CONDITION' => '#^/sprashivayut-po-zaboram/([^/]+?)/\\??(.*)#',
+    'RULE' => 'ELEMENT_CODE=$1&$2',
+    'ID' => 'seologica:catalog.element',
+    'PATH' => '/sprashivayut-po-zaboram/detail.php',
+    'SORT' => 100,
+  ),
+  9 => 
+  array (
+    'CONDITION' => '#^/ishchut-po-zaboram/([^/]+?)/\\??(.*)#',
+    'RULE' => 'ELEMENT_CODE=$1&$2',
+    'ID' => 'seologica:catalog.element',
+    'PATH' => '/ishchut-po-zaboram/detail.php',
+    'SORT' => 100,
+  ),
   2 => 
   array (
     'CONDITION' => '#^/company/([^/]+?)/\\??(.*)#',
@@ -24,14 +40,14 @@ $arUrlRewrite=array (
     'PATH' => '/robots.php',
     'SORT' => 100,
   ),
-    8 =>
-        array (
-            'CONDITION' => '#^/tenders/#',
-            'RULE' => '',
-            'ID' => 'seologica:catalog',
-            'PATH' => '/tenders/index.php',
-            'SORT' => 100,
-        ),
+  8 => 
+  array (
+    'CONDITION' => '#^/tenders/#',
+    'RULE' => '',
+    'ID' => 'seologica:catalog',
+    'PATH' => '/tenders/index.php',
+    'SORT' => 100,
+  ),
   0 => 
   array (
     'CONDITION' => '#^/rest/#',
@@ -40,7 +56,7 @@ $arUrlRewrite=array (
     'PATH' => '/bitrix/services/rest/index.php',
     'SORT' => 100,
   ),
-  6 => 
+  11 => 
   array (
     'CONDITION' => '#^/#',
     'RULE' => '',

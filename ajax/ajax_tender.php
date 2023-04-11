@@ -46,6 +46,10 @@ switch ($type_fence) {
         $iblock_section_id = 143;
         $type_fence_text = '3D забор';
         break;
+    case 623:
+        $iblock_section_id = 199;
+        $type_fence_text = 'Нужна помощь в выборе забора';
+        break;
 }
 
 //Формируем основание забора для названия
@@ -67,6 +71,9 @@ switch ($pillars) {
     case 119:
         $pillars_text = 'на крипичных столбах';
         break;
+    case 624:
+        $pillars_text = 'нужна помощь при выборе основания';
+        break;
 }
 
 //Формируем вид ворот для названия
@@ -87,6 +94,9 @@ switch ($gate) {
         break;
     case 124:
         $gate_text = 'с автоматическими распашными воротами';
+        break;
+    case 625:
+        $gate_text = 'нужна помощь в выборе ворот';
         break;
 }
 

@@ -8,6 +8,7 @@
         <label class="tender_fence__lbl">
             <select name="type_fence">
                 <option value="#" selected>Выберите тип забора</option>
+                <option value="623">Помощь в выборе</option>
                 <option value="108">Профнастил</option>
                 <option value="109">Сетка-рабица</option>
                 <option value="110">Металоштакетник</option>
@@ -21,6 +22,7 @@
         <label class="tender_fence__lbl">
             <select name="pillars">
                 <option value="#" selected>Выберите основание забора</option>
+                <option value="624">Помощь в выборе</option>
                 <option value="115">Забивные столбы</option>
                 <option value="116">Утрамбовка щебнем</option>
                 <option value="117">Бетонирование столбов</option>
@@ -33,6 +35,7 @@
             <select name="gate">
                 <option value="#" selected>Выберите ворота</option>
                 <option value="120">Не нужны</option>
+                <option value="625">Помощь в выборе</option>
                 <option value="121">Откатные</option>
                 <option value="122">Откатные с автоматикой</option>
                 <option value="123">Распашные</option>

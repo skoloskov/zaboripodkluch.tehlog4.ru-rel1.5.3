@@ -25,9 +25,9 @@ Array()
 		"ADD_PICT_PROP" => "-",
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"AJAX_MODE" => "N",
+		"AJAX_MODE" => "Y",
 		"AJAX_OPTION_ADDITIONAL" => "",
-		"AJAX_OPTION_HISTORY" => "N",
+		"AJAX_OPTION_HISTORY" => "Y",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
 		"BASKET_URL" => "/personal/basket.php",
@@ -84,7 +84,7 @@ Array()
 		"IBLOCK_ID" => "3",
 		"IBLOCK_TYPE" => "objects",
 		"INCLUDE_SUBSECTIONS" => "Y",
-		"INSTANT_RELOAD" => "N",
+		"INSTANT_RELOAD" => "Y",
 		"LABEL_PROP" => array(
 		),
 		"LAZY_LOAD" => "N",
@@ -124,7 +124,6 @@ Array()
 		"PRICE_CODE" => array(
 			0 => "PRICE",
 		),
-		
 		"PRICE_VAT_INCLUDE" => "Y",
 		"PRICE_VAT_SHOW_VALUE" => "N",
 		"PRODUCT_ID_VARIABLE" => "id",
@@ -194,9 +193,6 @@ Array()
 			),
 		)
 	),
-
-
-
 	false
 );?>
 

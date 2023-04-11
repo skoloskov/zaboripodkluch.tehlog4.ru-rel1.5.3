@@ -242,7 +242,7 @@ if ($arParams['HIDE_SECTION_DESCRIPTION'] !== 'Y')
                             <a href="<?=$item['DETAIL_PAGE_URL']?>">...</a>
                         </p>
                     </div>
-                    <?php
+                <?php
                 }?>
                 <!-- Удобное время для связи -->
                 <span class="company__time">
@@ -261,14 +261,14 @@ if ($arParams['HIDE_SECTION_DESCRIPTION'] !== 'Y')
                         <div class="rating" data-value="<?=$stars?>"></div>
                         <?php if (count($item['PROPERTIES']['REVIEWS'])>0){?>
                             <span class="range__comment"><?=count($item['PROPERTIES']['REVIEWS'])?> отзыва</span>
-                            <?php
+                        <?php
                         }?>
                     </div>
-                    <?php
+                <?php
                 }?>
                 <div class="company-content__work">
                     <div class="security__block">
-                        <span class="security__el security__contract">Работает по договору</span>
+                    <span class="security__el security__contract">Работает по договору</span>
                         <span class="security__el security__guarantee">Дает гарантию</span>
                     </div>
                     <div class="team">
@@ -285,7 +285,7 @@ if ($arParams['HIDE_SECTION_DESCRIPTION'] !== 'Y')
                     <?php foreach ($item['PROPERTIES']['SERVICES']['VALUE'] as $key=> $value){
                         ?>
                         <li class="company-comment__item">
-                            <span class="company-comment__el company-comment__desc"><?=$value?></span>
+							<span class="company-comment__el company-comment__desc"><?=$value?></span>
                             <span class="company-comment__el company-comment__price"><?=$item['PROPERTIES']['SERVICES']['DESCRIPTION'][$key]?> руб.</span>
                         </li>
                         <?php

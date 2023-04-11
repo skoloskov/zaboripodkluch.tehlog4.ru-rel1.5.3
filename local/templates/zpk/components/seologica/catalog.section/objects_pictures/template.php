@@ -173,10 +173,7 @@ $arWaterMark = Array(
 
 ?>
 
-<section class="objects_pictures">
-    <div class="container objects_pictures__container">
-        <a name="zabor_list"></a>
-        <h2 class="tobjects_pictures__title section__title">Фото сданных объектов</h2>
+
         <!-- select name="zabory" id="type_select" class="territory__select" onchange="select_change(this);">
             <option value="">Все заборы</option>
             <? /* foreach($arResult['PROPERTIES']['SECTIONS'] as $section){
@@ -230,9 +227,6 @@ $arWaterMark = Array(
             <?
         }
         ?>
-
-    </div>
-</section>
 
 
 <?

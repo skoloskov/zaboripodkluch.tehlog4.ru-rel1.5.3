@@ -453,6 +453,24 @@ header {
   color: #ff0042;
 }
 
+.company-page-content__title-block {
+  width: 100%;
+}
+
+.company-page-content__btn-block {
+  display: flex;
+}
+
+.company-page-content__title-block .company-page-content__phone {
+  margin-right: 20px;
+}
+
+.company-page-content__btn-block .hero__button_item_button {
+  padding: 15px 20px;
+  background-color: #ff004200;
+  color: #ff0042;
+}
+
 /* Стилизация секции Виды заборов */
 
 .types-fences__container {
@@ -1597,7 +1615,7 @@ textarea {
 
 
 
-/* Модальное окно изображений */
+  /* Модальное окно изображений */
 .photoView {
   position: fixed;
   height: 100%;
@@ -1666,7 +1684,7 @@ textarea {
   transition: opacity 0.5s, visibility 0.9s;
   visibility: hidden;
   z-index: 1000;
-  box-shadow: 4px 5px 10px rgb(0 0 0 / 22%);
+box-shadow: 4px 5px 10px rgb(0 0 0 / 22%);
 }
 
 #button__up::after {
@@ -4722,7 +4740,7 @@ form .smeta-form__input {
   }
 
   .company-content__title {
-    font-size: 26px;
+    font-size: 22px;
     text-align: center;
   }
 
@@ -4925,7 +4943,7 @@ form .smeta-form__input {
   }
 
   .company-content__img {
-    width: 100%;
+    width: 80%;
   }
 
   .footer__item {
@@ -5160,18 +5178,18 @@ form .smeta-form__input {
   }
 
   .company-content__img {
-    width: auto;
+   /* width: auto;*/
     max-height: 65px;
   }
 
   .range__title {
     position: absolute;
-    top: 90px;
-    font-size: 13px;
+    top: 95px;
+    font-size: 10px;
   }
 
   .range__block {
-    justify-content: center;
+  /*  justify-content: center;*/
     position: absolute;
     top: 110px;
     max-width: 150px;
@@ -5221,6 +5239,7 @@ form .smeta-form__input {
   .company-content__order {
     padding: 0 1em;
     height: 54px;
+    font-size: 12px;
   }
 
   .company-comment__slider {
@@ -5370,8 +5389,9 @@ form .smeta-form__input {
   }
 
   .company-content__btn-block {
-    justify-content: center;
+    justify-content: right;
     width: 100%;
+    padding: 0px 0px 0px 25px;
   }
 
   .company-content__phone {
@@ -5389,8 +5409,11 @@ form .smeta-form__input {
   }
 
   .company-content__phone_text::before {
-    left: 17px;
+    left: 8px;
     top: 12px;
+    width: 20px;
+    height: 20px;
+
   }
 
   .company-comment__slider .slick-arrow {
@@ -6914,7 +6937,7 @@ section.advantages {
   border-radius: 50%;
   animation: animate 1.5s linear infinite;
   opacity: 0;
-  backface-visibility: hidden;
+  backface-visibility: hidden; 
 }
 
 .whatsapp-button:after{
@@ -6925,21 +6948,21 @@ section.advantages {
 {
   0%
   {
-    transform: scale(0.5);
-    opacity: 0;
+      transform: scale(0.5);
+      opacity: 0;
   }
   50%
   {
-    opacity: 1;
+      opacity: 1;
   }
   100%
   {
-    transform: scale(1.2);
-    opacity: 0;
+      transform: scale(1.2);
+      opacity: 0;
   }
 }
-@media (max-width : 800px) {
-  .whatsapp-button {
+@media (max-width : 800px) {  
+  .whatsapp-button {   
     bottom: 5px; /*отступ кнопки снизу от экрана*/
     right: 10px; /*отступ кнопки слева от экрана(right - справа)*/
   }
@@ -6959,4 +6982,116 @@ section.advantages {
 
 .fa-whatsapp:before {
   content: "\f232";
+}
+
+/* Блок Люди искали */
+
+.people_search {
+  padding: 50px 0;
+}
+
+
+.people_search__link {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 10px;
+  max-width: 100%;
+  background: #f0f6fa;
+  color: #242729;
+  text-decoration: none;
+  line-height: 16px;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 12px 16px;
+  border-radius: 36px;
+}
+
+/* Блок Вопросы и ответы */
+
+.faq_accordion {
+  padding: 50px 0;
+}
+
+.people_search__header, .faq_accordion__header {
+  color: #242729;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.faq_accordion__item {
+  border: 1px solid #d9e4eb;
+  padding: 16px;
+  border-radius: 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.faq_accordion__item_header {
+  align-items: center;
+  display: flex;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.faq_accordion__item_arrow {
+  padding: 0 20px;
+  font-size: 18px;
+  color: #737272;
+  position: relative;
+}
+
+.faq_accordion__item_arrow .fa-chevron-down::before {
+  bottom: auto;
+  top: 0;
+  right: 0;
+}
+
+
+
+.faq_accordion__item_body {
+  margin-top: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.faq_accordion__item_body {
+  display: none;
+}
+
+.faq_accordion__item_active .faq_accordion__item_body {
+  display: block;
+}
+
+.faq_accordion__item_active .faq_accordion__item_arrow {
+  transform: rotate(180deg);
+}
+
+.faq_accordion__item_active .faq_accordion__item_arrow .fa-chevron-down::before {
+  right: 22px;
+}
+
+.container_filter {
+  margin-bottom: 50px;
+}
+
+.container_filter .bx_filter .bx_filter_section {
+  background: rgb(179, 205, 52);
+  border: 7px solid rgb(179, 205, 52);
+}
+
+.container_filter .bx_filter .bx_filter_select_container {
+  width: 100%;
+}
+
+.container_filter .bx_filter.bx_horizontal .bx_filter_parameters_box {
+  float: none;
+  width: 24%;
+  padding: 0 10px;
+  display: inline-block;
 }
